@@ -35,6 +35,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kOj-N5-tOL">
                                 <rect key="frame" x="126" y="453.5" width="123" height="30"/>
                                 <state key="normal" title="あなたの運勢は？"/>
+                                <connections>
+                                    <action selector="getOmikuji:" destination="BYZ-38-t0r" eventType="touchUpInside" id="n6J-KX-HAY"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -45,6 +48,9 @@
                             <constraint firstItem="kOj-N5-tOL" firstAttribute="top" secondItem="oF9-df-dQ1" secondAttribute="bottom" constant="20" id="h8K-UY-hJl"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="myLabel" destination="oF9-df-dQ1" id="wHF-22-NBn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
