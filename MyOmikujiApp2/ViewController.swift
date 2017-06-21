@@ -14,6 +14,11 @@ class ViewController: UIViewController {
     
     //ボタン押下時の処理
     @IBAction func getOmikuji(_ sender: Any) {
+        //乱数の生成
+        let random = arc4random_uniform(10)
+        
+        //乱数をラベルに表示
+        self.myLabel.text = String(random)
     }
     
     override func viewDidLoad() {
