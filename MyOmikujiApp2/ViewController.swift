@@ -29,6 +29,10 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        //ラベルを丸める
+        self.myLabel.layer.masksToBounds = true
+        self.myLabel.layer.cornerRadius = self.myLabel.bounds.width / 2
     }
 
     override func didReceiveMemoryWarning() {
