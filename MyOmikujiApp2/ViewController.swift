@@ -9,16 +9,21 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
     //変数の宣言
     @IBOutlet weak var myLabel: UILabel!
     
+    //おみくじ結果
+    let results = ["大吉","吉","中吉","凶","大凶"]
+    
     //ボタン押下時の処理
     @IBAction func getOmikuji(_ sender: Any) {
+        
         //乱数の生成
-        let random = arc4random_uniform(10)
+        let random = arc4random_uniform(UInt32(self.results.count))
         
         //乱数をラベルに表示
-        self.myLabel.text = String(random)
+        self.myLabel.text = self.results[Int(random)]
     }
     
     override func viewDidLoad() {
